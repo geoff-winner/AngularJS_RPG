@@ -35,6 +35,14 @@ h2 {
   text-align: center;
 }
 
+.magenameentry {
+  text-align: center;
+}
+
+.roguenameentry {
+  text-align: center;
+}
+
 
 h1 {
 text-align:center;
@@ -63,4 +71,24 @@ font-family: 'Dos';
 .fire2 {
   width: 50px;
   height: 50px;
+}
+
+.warpic {
+  text-align:center;
+  /*margin-left: 300px;
+  margin-top: 200px;*/
+  width: 150px;
+  height: 150px;
+}
+.magepic {
+  /*margin-left: 600px;
+  margin-top: 200px;*/
+  width: 150px;
+  height: 150px;
+}
+.roguepic {
+  /*margin-left: 900px;
+  margin-top: 200px;*/
+  width: 150px;
+  height: 150px;
 }

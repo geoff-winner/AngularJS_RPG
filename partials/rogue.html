@@ -1,11 +1,4 @@
-<div ng-show="rogue.length">
-  <h1>Warrior</h1>
-  <ul>
-    <li ng-repeat="item in rogue">
-      <a ui-sref="rogue({ rogueId: item.id })">{{ item.name }}</a>
-    </li>
-  </ul>
-</div>
+<h1>Rogue</h1>
 <div class='container-fluid'>
   <h3>The Gods have chosen you...</h3>
   <div class='roguenameentry'>
@@ -18,6 +11,13 @@
       <button type="submit" class="btn btn-default">Enter The Temple...</button>
     </form>
   </div>
+<div ng-show="rogue.length">
+  <ul>
+    <li ng-repeat="item in rogue">
+      <a ui-sref="rogue({ rogueId: item.id })">{{ item.name }}</a>
+    </li>
+  </ul>
+</div>
   <button type='submit' class='btn btn-default'><a href='/'>Pick Again...</a></button>
   </div>
 
