@@ -1,18 +1,24 @@
-<div ng-show="course.students.length">
-  <h2>Student List for {{ course.name }}</h2>
+<div ng-show="mage.length">
+  <h1>Mage</h1>
   <ul>
-    <li ng-repeat="item in course.students">
-      {{ item.name }}
+    <li ng-repeat="item in mage">
+      <a ui-sref="mage({ mageId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
 </div>
+<div class='container-fluid'>
+  <h3>The Gods have chosen you...</h3>
+  <div class='magenameentry'>
+    <form ng-submit="CharacterFactory.addMage()" class="form-inline" role="form">
+      <div class="form-group">
+        <input type="text" ng-model="CharacterFactory.mageName" class="form-control" placeholder="Enter your name Hero...">
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-default">Enter The Temple...</button>
+    </form>
+  </div>
+  <button type='submit' class='btn btn-default'><a href='/'>Pick Again...</a></button>
+  </div>
 
-<div>
-  <h2>Add a student to {{ course.name }}</h2>
-  <form ng-submit="addStudent()" class="form-inline" role="form">
-    <div class="form-group">
-      <input type="text" ng-model="studentName" class="form-control" placeholder="Enter the student's name">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+<div ui-view> </div>

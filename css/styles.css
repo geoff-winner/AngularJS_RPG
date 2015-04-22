@@ -12,15 +12,27 @@ h2 {
   color: white;
 }
 
-h3, h4 {
+.warrior, .mage, .rogue, h3, h4 {
   text-align:center;
   font-family: 'Dos';
   color: white;
   cursor: pointer;
 }
 
-h3:hover {
+.war:hover {
   text-shadow: 0px -8px 10px rgb(255, 51, 0);
+}
+
+.mage:hover {
+  text-shadow: 0px -8px 10px rgb(4, 53, 255);
+}
+
+.rogue:hover {
+  text-shadow: 0px -8px 10px rgb(0, 153, 51);
+}
+
+.warnameentry {
+  text-align: center;
 }
 
 

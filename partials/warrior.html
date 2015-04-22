@@ -1,20 +1,22 @@
-<div ng-show="characters.length">
-  <h1>Warrior</h1>
-  <ul>
-    <li ng-repeat="item in characters">
-      <a ui-sref="characters">{{ item.name }}</a>
-    </li>
-  </ul>
-</div>
-
-<div class="col-md-4">
-  <h3>Add a new character</h3>
-  <form ng-submit="CharacterFactory.addCharacter()" class="form-inline" role="form">
-    <div class="form-group">
-      <input type="text" ng-model="CharacterFactory.characterName" class="form-control" placeholder="Enter your champions name">
-    </div>
-    <button type="submit" class="btn btn-default">CREATE</button>
-  </form>
-</div>
+<h1>Warrior</h1>
+<div class='container-fluid'>
+  <h3>The Gods have chosen you...</h3>
+  <div class='warnameentry'>
+    <form ng-submit="CharacterFactory.addWarrior()" class="form-inline" role="form">
+      <div class="form-group">
+        <input type="text" ng-model="CharacterFactory.warriorName" class="form-control" placeholder="Enter your name Hero...">
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-default">Enter The Temple...</button>
+    </form>
+  </div>
+  <div ng-show="warrior.length">
+      <ul ng-repeat="item in warrior">
+        <h3><a ui-sref="warrior({ warriorId: item.id })">{{ item.name }}</a></h3>
+      </ul>
+  </div>
+  <button type='submit' class='btn btn-default'><a href='/'>Pick Again...</a></button>
+  </div>
 
 <div ui-view> </div>
