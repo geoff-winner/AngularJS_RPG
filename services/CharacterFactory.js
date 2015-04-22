@@ -9,13 +9,13 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
 
   factory.mage = [];
   factory.addMage = function() {
-    factory.characters.push({ name: factory.mageName, id: factory.characters.length + 1});
+    factory.mage.push({ name: factory.mageName, id: factory.mage.length + 1});
     factory.mageName = null;
   };
 
   factory.rogue = [];
   factory.addRogue = function() {
-    factory.characters.push({ name: factory.rogueName, id: factory.characters.length + 1});
+    factory.rogue.push({ name: factory.rogueName, id: factory.rogue.length + 1});
     factory.rogueName = null;
   };
   return factory;

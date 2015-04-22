@@ -11,13 +11,11 @@
       <button type="submit" class="btn btn-default">Enter The Temple...</button>
     </form>
   </div>
-<div ng-show="mage.length">
-  <ul>
-    <li ng-repeat="item in mage">
-      <a ui-sref="mage({ mageId: item.id })">{{ item.name }}</a>
-    </li>
-  </ul>
-</div>
+  <div ng-show="mage.length">
+      <ul ng-repeat="item in mage">
+        <h3><a ui-sref="mage({ mageId: item.id })">{{ item.name }}</a></h3>
+      </ul>
+  </div>
   <button type='submit' class='btn btn-default'><a href='/'>Pick Again...</a></button>
   </div>
 
