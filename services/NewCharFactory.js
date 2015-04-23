@@ -15,6 +15,7 @@ newChar.factory('NewCharFactory', function NewCharFactory() {
   factory.intelligence = [];
   factory.addIntelligence = function(intelligence) {
     var upintelligence = intelligence + 1;
+    factory.intelligence.push(upintelligence);
   };
   return factory;
 )};
