@@ -1,4 +1,4 @@
-<h1>Warrior</h1>
+  <h1>Warrior</h1>
 <div class='container-fluid'>
   <h1>The Gods Have Chosen You...</h1>
   <div class='warnameentry'>
@@ -13,10 +13,10 @@
   </div>
   <div ng-show="warrior.length">
       <ul ng-repeat="item in warrior">
-        <h3><a ui-sref="warriorname">{{ item.name }}</a></h3>
+        <h3><a ui-sref="warriorname({ warriorId: item.id })">{{ item.name }}</a></h3>
       </ul>
   </div>
-  <h3><a href='/'>Turn Back...</a></h3>
+  <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
   </div>
 
 <div ui-view> </div>

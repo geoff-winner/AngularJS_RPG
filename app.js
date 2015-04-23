@@ -42,10 +42,40 @@ characterList.config(function($stateProvider) {
     controller: 'WarriorCtrl',
   });
 
-  $stateProvider.state('charscreen', {
-    url:"/CharacterStats",
-    templateUrl: "partials/charscreen.html",
-    controller: 'CharCtrl'
+  $stateProvider.state('level1war', {
+    url:"/level1",
+    templateUrl: "partials/level1.html",
+    controller: 'WarriorCtrl'
+  });
+
+  $stateProvider.state('level1mage', {
+    url:"/level1",
+    templateUrl: "partials/level1.html",
+    controller: 'MageCtrl'
+  });
+
+  $stateProvider.state('level1rogue', {
+    url:"/level1",
+    templateUrl: "partials/level1.html",
+    controller: 'RogueCtrl'
+  });
+
+  $stateProvider.state('level1warfight', {
+    url:"/level1",
+    templateUrl: "partials/level1fight.html",
+    controller: 'WarriorCtrl'
+  });
+
+  $stateProvider.state('level1magefight', {
+    url:"/level1",
+    templateUrl: "partials/level1fight.html",
+    controller: 'MageCtrl'
+  });
+
+  $stateProvider.state('level1roguefight', {
+    url:"/level1",
+    templateUrl: "partials/level1fight.html",
+    controller: 'RogueCtrl'
   });
 
 });

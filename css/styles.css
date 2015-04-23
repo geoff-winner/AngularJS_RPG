@@ -4,11 +4,19 @@
 }
 
 body {
-  background-color: black;
+  background:black;
 }
-
 a:hover{
   color:white;
+}
+
+.level1 {
+  float: right;
+  margin-top: 300px;
+}
+
+.turnback {
+  margin-top:500px;
 }
 
 a {
@@ -98,6 +106,22 @@ font-family: 'Dos';
 .roguepic {
   /*margin-left: 900px;
   margin-top: 200px;*/
+  width: 150px;
+  height: 150px;
+}
+
+.level1warpic {
+  margin-top: 350px;
+  width: 150px;
+  height: 150px;
+}
+.level1magepic {
+  margin-top: 350px;
+  width: 150px;
+  height: 150px;
+}
+.level1roguepic {
+  margin-top: 350px;
   width: 150px;
   height: 150px;
 }

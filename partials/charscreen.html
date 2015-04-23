@@ -3,34 +3,35 @@
 <div ng-show="mage.length">
   <ul ng-repeat="item in mage">
     <h1>{{item.name}}</h1>
+    <h3>Strength {{item.strength}}</h3>
+    <h3>Dexterity {{item.dexterity}}</h3>
+    <h3>Intelligence {{item.intelligence}}</h3>
   </ul>
-  <center><image class='magepic' src='css/img/mage.gif'></img></a></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addStrength()' value='+1 Strength' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addDexterity()' value='+1 Dexterity' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addIntelligence()' value='+1 Intelligence' style="border: none; background: none; padding: 0;" /></h3>
+  <center><image class='magepic' src='css/img/mage.gif'></img></center>
+    <h3><a ui-sref="level1mage">Enter The Dark Temple...</a></h3>
 </div>
 
 <div ng-show="rogue.length">
   <ul ng-repeat="item in rogue">
     <h1>{{item.name}}</h1>
+    <h3>Strength {{item.strength}}</h3>
+    <h3>Dexterity {{item.dexterity}}</h3>
+    <h3>Intelligence {{item.intelligence}}</h3>
   </ul>
-  <center><image class='roguepic' src='css/img/rogue.gif'></img></a></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addStrength()' value='+1 Strength' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addDexterity()' value='+1 Dexterity' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addIntelligence()' value='+1 Intelligence' style="border: none; background: none; padding: 0;" /></h3>
+  <center><image class='roguepic' src='css/img/rogue.gif'></img></center>
+    <h3><a ui-sref="level1rogue">Enter The Dark Temple...</a></h3>
 </div>
 
 <div ng-show="warrior.length">
   <ul ng-repeat="item in warrior">
     <h1>{{item.name}}</h1>
+    <h3>Strength {{item.strength}}</h3>
+    <h3>Dexterity {{item.dexterity}}</h3>
+    <h3>Intelligence {{item.intelligence}}</h3>
   </ul>
-  <center><image class ='warpic' src='css/img/warrior.gif'></img></a></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addStrength()' value='+1 Strength' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addDexterity()' value='+1 Dexterity' style="border: none; background: none; padding: 0;" /></h3>
-    <h3><input type='submit' ng-click='NewCharFactory.addIntelligence()' value='+1 Intelligence' style="border: none; background: none; padding: 0;" /></h3>
+  <center><image class ='warpic' src='css/img/warrior.gif'></img></center>
+    <h3><a ui-sref="level1war">Enter The Dark Temple...</a></h3>
 </div>
 
-<h3><a ui-sref="level1">Enter The Dark Temple...</a></h3>
-<h3><a href='/'>Turn Back...</a></h3>
-
+<h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
 </div>
