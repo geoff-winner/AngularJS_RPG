@@ -1,22 +1,22 @@
 <h1>Warrior</h1>
 <div class='container-fluid'>
-  <h3>The Gods have chosen you...</h3>
+  <h1>The Gods Have Chosen You...</h1>
   <div class='warnameentry'>
     <form ng-submit="CharacterFactory.addWarrior()" class="form-inline" role="form">
       <div class="form-group">
-        <input type="text" ng-model="CharacterFactory.warriorName" class="form-control" placeholder="Enter your name Hero...">
+        <input type="text" ng-model="CharacterFactory.warriorName" class="form-control" placeholder="Enter Your Name Hero...">
       </div>
       <br>
       <br>
-      <button type="submit" class="btn btn-default">Enter The Temple...</button>
+      <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
     </form>
   </div>
   <div ng-show="warrior.length">
       <ul ng-repeat="item in warrior">
-        <h3><a ui-sref="warrior({ warriorId: item.id })">{{ item.name }}</a></h3>
+        <h3><a ui-sref="warriorname">{{ item.name }}</a></h3>
       </ul>
   </div>
-  <button type='submit' class='btn btn-default'><a href='/'>Pick Again...</a></button>
+  <h3><a href='/'>Pick Again...</a></h3>
   </div>
 
 <div ui-view> </div>

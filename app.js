@@ -24,5 +24,28 @@ characterList.config(function($stateProvider) {
     controller: 'RogueCtrl'
   });
 
+  $stateProvider.state('magename', {
+    url:"/CharacterStats",
+    templateUrl: "partials/charscreen.html",
+    controller: 'MageCtrl',
+  });
+
+  $stateProvider.state('roguename', {
+    url:"/CharacterStats",
+    templateUrl: "partials/charscreen.html",
+    controller: 'RogueCtrl',
+  });
+
+  $stateProvider.state('warriorname', {
+    url:"/CharacterStats",
+    templateUrl: "partials/charscreen.html",
+    controller: 'WarriorCtrl',
+  });
+
+  $stateProvider.state('charscreen', {
+    url:"/CharacterStats",
+    templateUrl: "partials/charscreen.html",
+    controller: 'CharCtrl'
+  });
 
 });

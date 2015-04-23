@@ -18,5 +18,6 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
     factory.rogue.push({ name: factory.rogueName, id: factory.rogue.length + 1});
     factory.rogueName = null;
   };
+
   return factory;
 });
