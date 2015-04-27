@@ -7,7 +7,7 @@ April 22, 2015<br />
 ###Description
 RPG...
 
-Enter into the Dark Temple. The Gods have chosen you, the one true hero that can save those who dwell in Asteroth, your home. Choose your class and go forth to battle evil and lay waste to the evil overlord Chaos. All who have fought before have fallen... Now is your chance to rise up and face evil head on.
+Enter into the Dark Temple. The Gods have chosen you, the one true hero that can save those who dwell in Asteroth, your home. Choose your class and go forth to battle evil and lay waste to the evil overlord Chaos. All who have fought before have fallen.. Now is your chance to rise up and face evil head on.
 
 ###Copyright (c) 2015 Marc Lee, Geoff Winner
 
