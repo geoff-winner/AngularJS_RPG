@@ -2,7 +2,7 @@
 <div class='container-fluid'>
   <h1>The Gods Have Chosen You...</h1>
   <div class='warnameentry'>
-    <form ng-submit="addWarrior(name)" class="form-inline" role="form">
+    <form ng-submit="addCharacter(name)" class="form-inline" role="form">
       <div class="form-group">
         <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
       </div>
@@ -11,9 +11,9 @@
       <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
     </form>
   </div>
-  <div ng-show="warrior.length">
-      <ul ng-repeat="item in warrior">
-        <h3><a ui-sref="name({ warriorId: item.id })">{{ item.playername }}</a></h3>
+  <div ng-show="characters.length">
+      <ul ng-repeat="item in characters">
+        <h3><a ui-sref="name({ warriorId: item.id })">{{ item.characterName }}</a></h3>
       </ul>
   </div>
   <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
