@@ -1,6 +1,8 @@
 characterList.factory('CharacterFactory', function CharacterFactory() {
   var factory = {};
   factory.strength = 0;
+  factory.dexterity = 0;
+  factory.intelligence = 0;
   var roll;
 
   factory.warrior = [];
@@ -11,13 +13,13 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
 
   factory.mage = [];
   factory.addMage = function() {
-    factory.mage.push({ name: factory.mageName, id: factory.mage.length + 1});
+    factory.mage.push({ playername: name, id: factory.mage.length + 1});
     factory.mageName = null;
   };
 
   factory.rogue = [];
   factory.addRogue = function() {
-    factory.rogue.push({ name: factory.rogueName, id: factory.rogue.length + 1});
+    factory.rogue.push({ playername: name, id: factory.rogue.length + 1});
     factory.rogueName = null;
   };
 
