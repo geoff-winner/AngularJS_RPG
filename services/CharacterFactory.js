@@ -1,23 +1,36 @@
 characterList.factory('CharacterFactory', function CharacterFactory() {
   var factory = {};
+  factory.strength = 0;
   var roll;
 
   factory.warrior = [];
-  factory.addWarrior = function() {
-    factory.warrior.push({ name: factory.warriorName, id: factory.warrior.length + 1, strength: 3, dexterity: 2, intelligence: 1, hp: 10});
+  factory.addWarrior = function(name) { console.log(name);
+    factory.warrior.push({ playername: name, id: factory.warrior.length + 1});
     factory.warriorName = null;
   };
 
   factory.mage = [];
   factory.addMage = function() {
-    factory.mage.push({ name: factory.mageName, id: factory.mage.length + 1, strength: 1, dexterity: 1, intelligence: 4});
+    factory.mage.push({ name: factory.mageName, id: factory.mage.length + 1});
     factory.mageName = null;
   };
 
   factory.rogue = [];
   factory.addRogue = function() {
-    factory.rogue.push({ name: factory.rogueName, id: factory.rogue.length + 1, strength: 2, dexterity: 3, intelligence: 1});
+    factory.rogue.push({ name: factory.rogueName, id: factory.rogue.length + 1});
     factory.rogueName = null;
+  };
+
+  factory.addStrength = function() {
+      factory.strength = factory.strength + 1;
+  };
+
+  factory.addDexterity =  function() {
+      factory.dexterity = factory.dexterity + 1;
+  };
+
+  factory.addIntelligence = function() {
+      factory.intelligence = factory.intelligence + 1;
   };
 
   factory.diceroll = function() {
