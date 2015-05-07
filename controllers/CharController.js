@@ -16,4 +16,21 @@ characterList.controller('CharCtrl', function CharCtrl($scope, CharacterFactory)
     $scope.name = null;
   }
 
+  $scope.setCharacter = function(name){
+    CharacterFactory.setCharacter(name);
+  }
+
+  $scope.addStrength = function(item) {
+    this.item.strength += 1;
+  }
+
+  $scope.addDexterity = function(item) {
+    this.item.dexterity += 1;
+  }
+
+  $scope.addIntelligence = function(item) {
+    this.item.intelligence += 1;
+  }
+
+
 });

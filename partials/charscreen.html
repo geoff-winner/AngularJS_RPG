@@ -15,7 +15,7 @@
         </div>
         <div ng-show="warrior.length">
             <ul ng-repeat="item in warrior">
-              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
+              <h3 ng-click="setCharacter(name)"><a ui-sref="stats">{{ item.characterName }}</a></h3>
             </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
@@ -38,7 +38,7 @@
         </div>
         <div ng-show="rogue.length">
             <ul ng-repeat="item in rogue">
-              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
+              <h3><a ui-sref="stats" >{{ item.characterName }}</a></h3>
             </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>

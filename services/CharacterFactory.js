@@ -29,9 +29,9 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
       };
   };
 
-  factory.addStrengthWar = function() {
-    factory.warrior.strength += 1;
-  }
+  // factory.addStrength = function() {
+  //   factory.strength += 1;
+  // }
 
   factory.levelOneAttack = function() {
 
@@ -40,6 +40,16 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
   factory.diceroll = function() {
     roll = Math.floor(Math.random() * 20) + 1;
     console.log(roll);
+  };
+
+  factory.setCharacter = function(name) {
+    var selected = null;
+    this.warrior.forEach(function(char) {
+      if (name == char.characterName) {
+        var selected = character;
+        console.log(selected);
+      };
+    });
   };
 
   return factory;
