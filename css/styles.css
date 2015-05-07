@@ -10,13 +10,9 @@ a:hover{
   color:white;
 }
 
-.level1 {
+.troll {
   float: right;
   margin-top: 300px;
-}
-
-.turnback {
-  margin-top:500px;
 }
 
 a {
@@ -34,6 +30,13 @@ h2 {
   font-family: 'Dos';
   color: white;
   cursor: pointer;
+}
+
+.battletext {
+  border: groove;
+  border-color: white;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .war:hover {
@@ -116,7 +119,7 @@ font-family: 'Dos';
   height: 150px;
 }
 .level1magepic {
-  margin-top: 350px;
+  margin-top: 200px;
   width: 150px;
   height: 150px;
 }
