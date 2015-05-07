@@ -1,39 +1,23 @@
 <h1>- Welcome to the Dark Temple -</h1>
 <h2>Choose Your Hero</h2>
-<h3 class='war'>
-   <a ui-sref="warrior">
-      Warrior
-      <center>
-         <image class ='warpic' src='css/img/warrior.gif'>
-         </img>
-   </a>
-</h3>
-</center>
-<h3 class='mage'>
-   <a ui-sref="mage">
-      Mage
-      <center>
-         <image class='magepic' src='css/img/mage.gif'>
-         </img>
-   </a>
-</h3>
-</center>
-<h3 class='rogue'>
-   <a ui-sref="rogue">
-      Rogue
-      <center>
-         <image class='roguepic' src='css/img/rogue.gif'>
-         </img>
-   </a>
-</h3>
-</center>
+<h3 class='war' type="warrior" ng-click="changeselected('warrior')"><a ui-sref="charselect">Warrior
+    <center><image class ='warpic' src='css/img/warrior.gif'></img></a>
+</h3></center>
+<h3 class='mage' type="mage" ng-click="changeselected('mage')"><a ui-sref="charselect">Mage
+    <center><image class='magepic' src='css/img/mage.gif'></img></a>
+</h3></center>
+<h3 class='rogue' type="rogue" ng-click="changeselected('rogue')"><a ui-sref="charselect">Rogue
+    <center><image class='roguepic' src='css/img/rogue.gif'></img></a>
+</h3></center>
+
+
 <div class='container-fluid'>
-   <div class='row'>
+    <div class='row'>
       <div class='col-md-10'>
-         <div class='fire1'><img src='css/img/fire1.gif'><img></div>
+        <div class='fire1'><img src='css/img/fire1.gif'><img></div>
       </div>
       <div class='col-md-2'>
-         <div class='fire2'><img src='css/img/fire2.gif'><img></div>
+        <div class='fire2'><img src='css/img/fire2.gif'><img></div>
       </div>
-   </div>
+    </div>
 </div>

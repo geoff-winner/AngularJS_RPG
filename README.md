@@ -1,15 +1,20 @@
 ###Developers
-Marc Lee, Geoff Winner
+Marc Lee, Geoff Winner, Brett Moore, Connor Abdelnoor, Tanner Heffner
 
 ###Date
-April 22, 2015<br />
+April 22, 2015
 
 ###Description
 RPG...
 
 Enter into the Dark Temple. The Gods have chosen you, the one true hero that can save those who dwell in Asteroth, your home. Choose your class and go forth to battle evil and lay waste to the evil overlord Chaos. All who have fought before have fallen.. Now is your chance to rise up and face evil head on.
 
-###Copyright (c) 2015 Marc Lee, Geoff Winner
+###Setup
+1. Git clone this repository
+2. Start a local host in the project directory (ex: `$ python -m SimpleHTTPServer`)
+3. Open localhost:8000 in your browser
+
+###Copyright (c) 2015 Marc Lee, Geoff Winner, Brett Moore, Connor Abdelnoor, Tanner Heffner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
