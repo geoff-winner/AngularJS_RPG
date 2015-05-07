@@ -2,7 +2,12 @@
   <div ng-show="selectedCharacter == 'warrior'">
     <div ng-controller='CharCtrl'>
       <ul ng-repeat="item in warrior">
+        <div ng-hide='item.health < 1'>
         <h3> Your Health: {{item.health}}</h3>
+        </div>
+        <div ng-show='item.health < 1'>
+          <h3> You Died! </h3>
+        </div>
         <div ng-hide='troll.health < 1'>
           <h3>Troll Health: {{troll.health}}</h3>
         </div>
@@ -10,15 +15,24 @@
           <h3>You killed the troll!</h3>
         </div>
       </ul>
-      <img class='level1warpic' src='css/img/warrior.gif'></img>
-      <img class='troll' src='css/img/bahamut.gif'></img>
+      <img class='level1charpic' src='css/img/warrior.gif'></img>
+      <img class='troll' src='css/img/troll.gif'></img>
+      <div class='battletext'>
+        <h3><button style="border: none; background: none; padding: 0;" ng-click='attack()'>Bash!</button></h3>
+      </div>
+       <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
     </div>
   </div>
 
   <div ng-show="selectedCharacter == 'mage'">
     <div ng-controller='CharCtrl'>
       <ul ng-repeat="item in mage">
+        <div ng-hide='item.health < 1'>
         <h3> Your Health: {{item.health}}</h3>
+        </div>
+        <div ng-show='item.health < 1'>
+          <h3> You Died! </h3>
+        </div>
         <div ng-hide='troll.health < 1'>
           <h3>Troll Health: {{troll.health}}</h3>
         </div>
@@ -26,29 +40,37 @@
           <h3>You killed the troll!</h3>
         </div>
       </ul>
-      <img class='level1magepic' src='css/img/mage.gif'></img>
-      <img class='troll' src='css/img/bahamut.gif'></img>
-    </div>
-  </div>
-  <div ng-show="selectedCharacter == 'rogue'">
-    <div ng-controller='CharCtrl'>
-      <ul ng-repeat="item in rogue">
-        <h3> Your Health: {{item.health}}</h3>
-        <div ng-hide='troll.health < 1'>
-          <h3>Troll Health: {{troll.health}}</h3>
-        </div>
-        <div ng-show='troll.health < 1'>
-          <h3>You killed the troll!</h3>
-        </div>
-      </ul>
-      <img class='level1roguepic' src='css/img/rogue.gif'>
-      <img class='troll' src='css/img/bahamut.gif'></img>
+      <img class='level1charpic' src='css/img/mage.gif'></img>
+      <img class='troll' src='css/img/troll.gif'></img>
+      <div class='battletext'>
+        <h3><button style="border: none; background: none; padding: 0;" ng-click='attack()'>Fireball!</button></h3>
+      </div>
+      <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
     </div>
   </div>
 
-  <div class='battletext'>
-    <h3><button style="border: none; background: none; padding: 0;" ng-click='attack()'>Attack!</button></h3>
+  <div ng-show="selectedCharacter == 'rogue'">
+    <div ng-controller='CharCtrl'>
+      <ul ng-repeat="item in rogue">
+        <div ng-hide='item.health < 1'>
+        <h3> Your Health: {{item.health}}</h3>
+        </div>
+        <div ng-show='item.health < 1'>
+          <h3> You Died! </h3>
+        </div>
+        <div ng-hide='troll.health < 1'>
+          <h3>Troll Health: {{troll.health}}</h3>
+        </div>
+        <div ng-show='troll.health < 1'>
+          <h3>You killed the troll!</h3>
+        </div>
+      </ul>
+      <img class='level1charpic' src='css/img/rogue.gif'>
+      <img class='troll' src='css/img/troll.gif'></img>
+      <div class='battletext'>
+        <h3><button style="border: none; background: none; padding: 0;" ng-click='attack()'>Backstab!</button></h3>
+      </div>
+      <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
+    </div>
   </div>
-  <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
-</div>
 </div>
