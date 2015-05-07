@@ -1,5 +1,5 @@
 <div class='container-fluid'>
-  <div ng-show="selectedWarrior">
+  <div ng-show="selectedCharacter == 'warrior'">
       <h1>Warrior</h1>
       <div class='container-fluid'>
         <h1>The Gods Have Chosen You...</h1>
@@ -15,14 +15,14 @@
         </div>
         <div ng-show="warrior.length">
             <ul ng-repeat="item in warrior">
-              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
             </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
         </div>
     </div>
 
-    <div ng-show="selectedRogue">
+    <div ng-show="selectedCharacter == 'rogue'">
       <h1>Rogue</h1>
       <div class='container-fluid'>
         <h1>The Gods Have Chosen You...</h1>
@@ -38,14 +38,14 @@
         </div>
         <div ng-show="rogue.length">
             <ul ng-repeat="item in rogue">
-              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
             </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
         </div>
     </div>
 
-    <div ng-show="selectedMage">
+    <div ng-show="selectedCharacter == 'mage'">
       <h1>Mage</h1>
       <div class='container-fluid'>
         <h1>The Gods Have Chosen You...</h1>
@@ -61,7 +61,7 @@
         </div>
         <div ng-show="mage.length">
             <ul ng-repeat="item in mage">
-              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
             </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>

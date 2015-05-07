@@ -5,14 +5,11 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
   factory.mage = [];
   factory.rogue = [];
 
-  factory.selectedWarrior = null;
-  factory.selectedRogue = null;
-  factory.selectedMage = null;
+  factory.selectedCharacter = null;
 
   var attackStr = 5;
 
   factory.addCharacter = function(name, type) {
-    console.log(name, type);
       var character = {
           class: type,
           characterName: name,
@@ -31,6 +28,10 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
           this.rogue.push(character);
       };
   };
+
+  factory.addStrengthWar = function() {
+    factory.warrior.strength += 1;
+  }
 
   factory.levelOneAttack = function() {
 
