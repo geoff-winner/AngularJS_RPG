@@ -1,17 +1,17 @@
 <div class='container-fluid'>
-   <div ng-show="warrior.length">
+   <div ng-show="selectedCharacter == 'warrior'">
       <img class='level1warpic' src='css/img/warrior.gif'></img>
       <img class='level1' src='css/img/troll.gif'></img>
       <br>
       <h3><a ui-sref='level1warfight'> You Enter The Temple and a Troll Appears!</a></h3>
    </div>
-   <div ng-show="mage.length">
+   <div ng-show="selectedCharacter == 'mage'">
       <img class='level1magepic' src='css/img/mage.gif'></img>
       <img class='level1' src='css/img/troll.gif'></img>
       <br>
       <h3><a ui-sref='level1magefight'> You Enter The Temple and a Troll Appears!</a></h3>
    </div>
-   <div ng-show="rogue.length">
+   <div ng-show="selectedCharacter == 'rogue'">
       <img class='level1roguepic' src='css/img/rogue.gif'>
       <img class='level1' src='css/img/troll.gif'></img>
       <br>
