@@ -32,6 +32,9 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
       };
   };
 
+  factory.levelOneAttack = function() {
+
+  }
 
   factory.diceroll = function() {
     roll = Math.floor(Math.random() * 20) + 1;
