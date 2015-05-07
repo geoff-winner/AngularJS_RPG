@@ -4,5 +4,9 @@ characterList.factory('MonsterFactory', function MonsterFactory() {
   factory.troll = {
     health: 50
   }
+
+  factory.bahamut = {
+    health: 150
+  }
   return factory;
 });

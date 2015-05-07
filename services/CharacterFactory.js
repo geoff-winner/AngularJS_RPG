@@ -31,7 +31,6 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
     };
   };
 
-
   factory.diceroll = function() {
     roll = Math.floor(Math.random() * 20) + 1;
     console.log(roll);
