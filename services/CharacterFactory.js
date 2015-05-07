@@ -12,23 +12,23 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
   var attackStr = 5;
 
   factory.addCharacter = function(name, type) {
-      var character = {
-          class: type,
-          characterName: name,
-          level: 1,
-          strength: 0,
-          dexterity: 0,
-          intelligence: 0,
-          health: 50
-      }
+    var character = {
+      class: type,
+      characterName: name,
+      level: 1,
+      strength: 0,
+      dexterity: 0,
+      intelligence: 0,
+      health: 50
+    }
 
-      if (type == "warrior") {
-          this.warrior.push(character);
-      } else if (type == "mage") {
-          this.mage.push(character);
-      } else {
-          this.rogue.push(character);
-      };
+    if (type == "warrior") {
+      this.warrior.push(character);
+    } else if (type == "mage") {
+      this.mage.push(character);
+    } else {
+      this.rogue.push(character);
+    };
   };
 
 

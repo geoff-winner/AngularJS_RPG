@@ -11,12 +11,12 @@ characterList.controller('BattleCtrl', function BattleCtrl($scope, CharacterFact
     var roll = Math.floor(Math.random() * 10) + 1;
     if (roll < 5) {
       if ($scope.selectedCharacter == 'warrior'){
-      CharacterFactory.warrior[0].health -= 10;
-    } else if ($scope.selectedCharacter == 'mage') {
-      CharacterFactory.mage[0].health -= 10;
-    } else {
-      CharacterFactory.rogue[0].health -= 10;
-    }
-  };
+        CharacterFactory.warrior[0].health -= 10;
+      } else if ($scope.selectedCharacter == 'mage') {
+        CharacterFactory.mage[0].health -= 10;
+      } else {
+        CharacterFactory.rogue[0].health -= 10;
+      }
+    };
   }
 });

@@ -1,25 +1,25 @@
 <div class='container-fluid'>
   <div ng-show="selectedCharacter == 'warrior'">
-      <h1>Warrior</h1>
-      <div class='container-fluid'>
-        <h1>The Gods Have Chosen You...</h1>
-        <div class='warnameentry'>
-          <form ng-submit="addCharacter(name, 'warrior')" class="form-inline" role="form">
-            <div class="form-group">
-              <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
-            </div>
-            <br>
-            <br>
-            <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
+    <h1>Warrior</h1>
+    <div class='container-fluid'>
+      <h1>The Gods Have Chosen You...</h1>
+      <div class='warnameentry'>
+        <form ng-submit="addCharacter(name, 'warrior')" class="form-inline" role="form">
+          <div class="form-group">
+            <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+          </div>
+          <br>
+          <br>
+          <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
           </form>
         </div>
         <div ng-show="warrior.length">
-            <ul ng-repeat="item in warrior">
-              <h3 ng-click="setCharacter(name)"><a ui-sref="stats">{{ item.characterName }}</a></h3>
-            </ul>
+          <ul ng-repeat="item in warrior">
+            <h3 ng-click="setCharacter(name)"><a ui-sref="stats">{{ item.characterName }}</a></h3>
+          </ul>
         </div>
         <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
-        </div>
+      </div>
     </div>
 
     <div ng-show="selectedCharacter == 'rogue'">
@@ -34,71 +34,71 @@
             <br>
             <br>
             <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
-          </form>
-        </div>
-        <div ng-show="rogue.length">
+            </form>
+          </div>
+          <div ng-show="rogue.length">
             <ul ng-repeat="item in rogue">
               <h3><a ui-sref="stats" >{{ item.characterName }}</a></h3>
             </ul>
+          </div>
+          <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
         </div>
-        <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
-        </div>
-    </div>
+      </div>
 
-    <div ng-show="selectedCharacter == 'mage'">
-      <h1>Mage</h1>
-      <div class='container-fluid'>
-        <h1>The Gods Have Chosen You...</h1>
-        <div class='magenameentry'>
-          <form ng-submit="addCharacter(name, 'mage')" class="form-inline" role="form">
-            <div class="form-group">
-              <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+      <div ng-show="selectedCharacter == 'mage'">
+        <h1>Mage</h1>
+        <div class='container-fluid'>
+          <h1>The Gods Have Chosen You...</h1>
+          <div class='magenameentry'>
+            <form ng-submit="addCharacter(name, 'mage')" class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+              </div>
+              <br>
+              <br>
+              <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
+              </form>
             </div>
-            <br>
-            <br>
-            <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
-          </form>
+            <div ng-show="mage.length">
+              <ul ng-repeat="item in mage">
+                <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
+              </ul>
+            </div>
+            <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
+          </div>
         </div>
-        <div ng-show="mage.length">
-            <ul ng-repeat="item in mage">
-              <h3><a ui-sref="stats">{{ item.characterName }}</a></h3>
-            </ul>
-        </div>
-        <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
-        </div>
+
+        <!-- <div ng-show="mage.length">
+        <ul ng-repeat="item in mage">
+        <h1>{{item.name}}</h1>
+        <h3>Strength {{item.strength}}</h3>
+        <h3>Dexterity {{item.dexterity}}</h3>
+        <h3>Intelligence {{item.intelligence}}</h3>
+      </ul>
+      <center><image class='magepic' src='css/img/mage.gif'></img></center>
+      <h3><a ui-sref="level1mage">Enter The Dark Temple...</a></h3>
     </div>
 
-<!-- <div ng-show="mage.length">
-  <ul ng-repeat="item in mage">
-    <h1>{{item.name}}</h1>
-    <h3>Strength {{item.strength}}</h3>
-    <h3>Dexterity {{item.dexterity}}</h3>
-    <h3>Intelligence {{item.intelligence}}</h3>
-  </ul>
-  <center><image class='magepic' src='css/img/mage.gif'></img></center>
-    <h3><a ui-sref="level1mage">Enter The Dark Temple...</a></h3>
-</div>
-
-<div ng-show="rogue.length">
-  <ul ng-repeat="item in rogue">
+    <div ng-show="rogue.length">
+    <ul ng-repeat="item in rogue">
     <h1>{{item.name}}</h1>
     <h3>Strength {{item.strength}}</h3>
     <h3>Dexterity {{item.dexterity}}</h3>
     <h3>Intelligence {{item.intelligence}}</h3>
   </ul>
   <center><image class='roguepic' src='css/img/rogue.gif'></img></center>
-    <h3><a ui-sref="level1rogue">Enter The Dark Temple...</a></h3>
+  <h3><a ui-sref="level1rogue">Enter The Dark Temple...</a></h3>
 </div>
 
 <div ng-show="warrior.length">
-  <ul ng-repeat="item in warrior">
-    <h1>{{item.name}}</h1>
-    <h3>Strength {{item.strength}}</h3>
-    <h3>Dexterity {{item.dexterity}}</h3>
-    <h3>Intelligence {{item.intelligence}}</h3>
-  </ul>
-  <center><image class ='warpic' src='css/img/warrior.gif'></img></center>
-    <h3><a ui-sref="level1war">Enter The Dark Temple...</a></h3>
+<ul ng-repeat="item in warrior">
+<h1>{{item.name}}</h1>
+<h3>Strength {{item.strength}}</h3>
+<h3>Dexterity {{item.dexterity}}</h3>
+<h3>Intelligence {{item.intelligence}}</h3>
+</ul>
+<center><image class ='warpic' src='css/img/warrior.gif'></img></center>
+<h3><a ui-sref="level1war">Enter The Dark Temple...</a></h3>
 </div>
 
 <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>

@@ -19,21 +19,21 @@ characterList.config(function($stateProvider) {
   });
 
   $stateProvider.state('charselect', {
-      url: "/select",
-      templateUrl: "partials/charscreen.html",
-      controller: 'CharCtrl'
+    url: "/select",
+    templateUrl: "partials/charscreen.html",
+    controller: 'CharCtrl'
   });
 
   $stateProvider.state('stats', {
-      url: "/stats",
-      templateUrl: "partials/customize.html",
-      controller: 'CharCtrl'
+    url: "/stats",
+    templateUrl: "partials/customize.html",
+    controller: 'CharCtrl'
   });
 
   $stateProvider.state('level1', {
-      url: "/level1",
-      templateUrl: "partials/level1.html",
-      controller: 'BattleCtrl'
+    url: "/level1",
+    templateUrl: "partials/level1.html",
+    controller: 'BattleCtrl'
   });
 
 });
