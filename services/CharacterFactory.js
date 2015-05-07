@@ -12,11 +12,16 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
           class: type,
           characterName: name,
           id: this.character.length + 1,
+          health: 10,
           strength: 0,
           dexterity: 0,
           intelligence: 0
        });
   };
+
+  factory.levelOneAttack = function() {
+    
+  }
 
   // factory.warrior = [];
   // factory.addWarrior = function(name) { console.log(name);
