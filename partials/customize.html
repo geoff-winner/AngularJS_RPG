@@ -3,9 +3,11 @@
 <div ng-show="mage.length">
   <ul ng-repeat="item in mage">
     <h1>{{item.characterName}}</h1>
-    <h3>Strength {{item.strength}}<button ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Dexterity {{item.dexterity}}<button ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Intelligence {{item.intelligence}}<button ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Strength: {{item.strength}}<button ng-hide="this.statPoints < 1" ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Dexterity: {{item.dexterity}}<button ng-hide="this.statPoints < 1" ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Intelligence: {{item.intelligence}}<button ng-hide="this.statPoints < 1" ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Remaining stat points: {{ this.statPoints }}</h3>
+
   </ul>
   <center><image class='magepic' src='css/img/mage.gif'></img></center>
     <h3><a ui-sref="level1mage">Enter The Dark Temple...</a></h3>
@@ -19,9 +21,10 @@
 <div ng-show="rogue.length">
   <ul ng-repeat="item in rogue">
     <h1>{{item.characterName}}</h1>
-    <h3>Strength {{item.strength}} <button ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Dexterity {{item.dexterity}} <button ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Intelligence {{item.intelligence}} <button ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Strength {{item.strength}} <button ng-hide="this.statPoints < 1" ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Dexterity {{item.dexterity}} <button ng-hide="this.statPoints < 1" ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Intelligence {{item.intelligence}} <button ng-hide="this.statPoints < 1" ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Remaining stat points: {{ this.statPoints }}</h3>
   </ul>
   <center><image class='roguepic' src='css/img/rogue.gif'></img></center>
     <h3><a ui-sref="level1rogue">Enter The Dark Temple...</a></h3>
@@ -34,9 +37,10 @@
 <div ng-show="warrior.length">
   <ul ng-repeat="item in warrior">
     <h1>{{item.characterName}}</h1>
-    <h3>Strength {{item.strength}} <button ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Dexterity {{item.dexterity}} <button ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
-    <h3>Intelligence {{item.intelligence}} <button ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Strength {{item.strength}} <button ng-hide="this.statPoints < 1" ng-click="addStrength()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Dexterity {{item.dexterity}} <button ng-hide="this.statPoints < 1" ng-click="addDexterity()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Intelligence {{item.intelligence}} <button ng-hide="this.statPoints < 1" ng-click="addIntelligence()" style="border: none; background: none; padding: 0;">+</button></h3>
+    <h3>Remaining stat points: {{ this.statPoints }}</h3>
   </ul>
   <center><image class ='warpic' src='css/img/warrior.gif'></img></center>
     <h3><a ui-sref="level1war">Enter The Dark Temple...</a></h3>

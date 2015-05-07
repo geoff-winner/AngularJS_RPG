@@ -6,6 +6,8 @@ characterList.controller('CharCtrl', function CharCtrl($scope, CharacterFactory)
 
   $scope.selectedCharacter = CharacterFactory.selectedCharacter;
 
+  $scope.statPoints = CharacterFactory.statPoints;
+
   $scope.changeselected = function(type) {
     CharacterFactory.selectedCharacter = null;
     CharacterFactory.selectedCharacter = type;
@@ -22,14 +24,18 @@ characterList.controller('CharCtrl', function CharCtrl($scope, CharacterFactory)
 
   $scope.addStrength = function(item) {
     this.item.strength += 1;
+    $scope.statPoints -= 1;
+    console.log($scope.statPoints);
   }
 
   $scope.addDexterity = function(item) {
     this.item.dexterity += 1;
+    $scope.statPoints -= 1;
   }
 
   $scope.addIntelligence = function(item) {
     this.item.intelligence += 1;
+    $scope.statPoints -= 1;
   }
 
 

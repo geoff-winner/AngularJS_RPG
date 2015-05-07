@@ -7,6 +7,8 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
 
   factory.selectedCharacter = null;
 
+  factory.statPoints = 10;
+
   var attackStr = 5;
 
   factory.addCharacter = function(name, type) {
