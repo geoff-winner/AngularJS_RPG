@@ -25,7 +25,6 @@ characterList.controller('CharCtrl', function CharCtrl($scope, CharacterFactory)
   $scope.addStrength = function(item) {
     this.item.strength += 1;
     $scope.statPoints -= 1;
-    console.log($scope.statPoints);
   }
 
   $scope.addDexterity = function(item) {
@@ -37,6 +36,8 @@ characterList.controller('CharCtrl', function CharCtrl($scope, CharacterFactory)
     this.item.intelligence += 1;
     $scope.statPoints -= 1;
   }
+
+
 
 
 });

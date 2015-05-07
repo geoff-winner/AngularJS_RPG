@@ -31,13 +31,6 @@ characterList.factory('CharacterFactory', function CharacterFactory() {
       };
   };
 
-  // factory.addStrength = function() {
-  //   factory.strength += 1;
-  // }
-
-  factory.levelOneAttack = function() {
-
-  }
 
   factory.diceroll = function() {
     roll = Math.floor(Math.random() * 20) + 1;

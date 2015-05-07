@@ -33,7 +33,7 @@ characterList.config(function($stateProvider) {
   $stateProvider.state('level1', {
       url: "/level1",
       templateUrl: "partials/level1.html",
-      controller: 'CharCtrl'
+      controller: 'BattleCtrl'
   });
 
 });

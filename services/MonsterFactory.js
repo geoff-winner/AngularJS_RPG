@@ -1,5 +1,8 @@
 characterList.factory('MonsterFactory', function MonsterFactory() {
   var factory = {};
 
-  factory.trollhealth = 0;
-})
+  factory.troll = {
+    health: 50
+  }
+  return factory;
+});
