@@ -1,6 +1,85 @@
 <div class='container-fluid'>
 
-<div ng-show="mage.length">
+  <div ng-show="selectedWarrior">
+      <h1>Warrior</h1>
+      <div class='container-fluid'>
+        <h1>The Gods Have Chosen You...</h1>
+        <div class='warnameentry'>
+          <form ng-submit="addCharacter(name, 'warrior')" class="form-inline" role="form">
+            <div class="form-group">
+              <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+            </div>
+            <br>
+            <br>
+            <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
+          </form>
+        </div>
+        <div ng-show="warrior.length">
+            <ul ng-repeat="item in warrior">
+              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+            </ul>
+        </div>
+        <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
+        </div>
+    </div>
+
+
+
+
+
+    <div ng-show="selectedRogue">
+      <h1>Rogue</h1>
+      <div class='container-fluid'>
+        <h1>The Gods Have Chosen You...</h1>
+        <div class='roguenameentry'>
+          <form ng-submit="addCharacter(name, 'rogue')" class="form-inline" role="form">
+            <div class="form-group">
+              <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+            </div>
+            <br>
+            <br>
+            <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
+          </form>
+        </div>
+        <div ng-show="rogue.length">
+            <ul ng-repeat="item in rogue">
+              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+            </ul>
+        </div>
+        <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
+        </div>
+    </div>
+
+    <div ng-show="selectedMage">
+      <h1>Mage</h1>
+      <div class='container-fluid'>
+        <h1>The Gods Have Chosen You...</h1>
+        <div class='magenameentry'>
+          <form ng-submit="addCharacter(name, 'mage')" class="form-inline" role="form">
+            <div class="form-group">
+              <input type="text" ng-model="name" class="form-control" placeholder="Enter Your Name Hero...">
+            </div>
+            <br>
+            <br>
+            <h3><input type='submit' value='Your Name is...' style="border: none; background: none; padding: 0;" /><h3>
+          </form>
+        </div>
+        <div ng-show="mage.length">
+            <ul ng-repeat="item in mage">
+              <h3><a ui-sref="name">{{ item.characterName }}</a></h3>
+            </ul>
+        </div>
+        <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- <div ng-show="mage.length">
   <ul ng-repeat="item in mage">
     <h1>{{item.name}}</h1>
     <h3>Strength {{item.strength}}</h3>
@@ -34,4 +113,4 @@
 </div>
 
 <h3 class='turnback'><a ui-sref='home'>Turn Back...</a></h3>
-</div>
+</div> -->
