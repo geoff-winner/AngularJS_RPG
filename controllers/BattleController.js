@@ -33,5 +33,16 @@ characterList.controller('BattleCtrl', function BattleCtrl($scope, CharacterFact
         CharacterFactory.rogue[0].health -= 10;
       }
     };
+  },
+
+  $scope.healthpotion = function() {
+    if ($scope.selectedCharacter == 'warrior'){
+      CharacterFactory.warrior[0].health = 50;
+      console.log(CharacterFactory.warrior[0].health);
+    } else if ($scope.selectedCharacter == 'mage') {
+      CharacterFactory.mage[0].health = 50;
+    } else {
+      CharacterFactory.rogue[0].health = 50;
+    }
   }
 });
