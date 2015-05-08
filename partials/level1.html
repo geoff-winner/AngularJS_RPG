@@ -3,13 +3,15 @@
     <div ng-controller='CharCtrl'>
       <ul ng-repeat="item in warrior">
         <div ng-hide='item.health < 1'>
-        <h3> Your Health: {{item.health}}</h3>
+        <h3> Health:</h3>
+          <center><progress max="50" value="{{item.health}}"></progress></center>
         </div>
         <div ng-show='item.health < 1'>
           <h3> You Died! </h3>
         </div>
         <div ng-hide='troll.health < 1'>
-          <h3>Troll Health: {{troll.health}}</h3>
+          <h3>Troll Health:</h3>
+          <center><progress max="50" value="{{troll.health}}"></progress></center>
         </div>
         <div ng-show='troll.health < 1'>
           <h3>You killed the troll!</h3>
@@ -28,13 +30,15 @@
     <div ng-controller='CharCtrl'>
       <ul ng-repeat="item in mage">
         <div ng-hide='item.health < 1'>
-        <h3> Your Health: {{item.health}}</h3>
+        <h3> Your Health:</h3>
+        <center><progress max="50" value="{{item.health}}"></progress></center>
         </div>
         <div ng-show='item.health < 1'>
           <h3> You Died! </h3>
         </div>
         <div ng-hide='troll.health < 1'>
-          <h3>Troll Health: {{troll.health}}</h3>
+          <h3>Troll Health:</h3>
+          <center><progress max="50" value="{{troll.health}}"></progress></center>
         </div>
         <div ng-show='troll.health < 1'>
           <h3>You killed the troll!</h3>
@@ -53,13 +57,15 @@
     <div ng-controller='CharCtrl'>
       <ul ng-repeat="item in rogue">
         <div ng-hide='item.health < 1'>
-        <h3> Your Health: {{item.health}}</h3>
+        <h3> Your Health:</h3>
+        <center><progress max="50" value="{{item.health}}"></progress></center>
         </div>
         <div ng-show='item.health < 1'>
           <h3> You Died! </h3>
         </div>
         <div ng-hide='troll.health < 1'>
-          <h3>Troll Health: {{troll.health}}</h3>
+          <h3>Troll Health:</h3>
+          <center><progress max="50" value="{{troll.health}}"></progress></center>
         </div>
         <div ng-show='troll.health < 1'>
           <h3>You killed the troll!</h3>
