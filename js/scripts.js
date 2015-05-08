@@ -4,3 +4,10 @@ audio.addEventListener('ended', function() {
     this.play();
 }, false);
 audio.play();
+
+function pauseAudio(){
+audio.pause();
+};
+function playAudio(){
+audio.play();
+};

@@ -36,4 +36,10 @@ characterList.config(function($stateProvider) {
     controller: 'BattleCtrl'
   });
 
+  $stateProvider.state('level2', {
+    url: "/level2",
+    templateUrl: "partials/level2.html",
+    controller: 'BattleCtrl'
+  });
+
 });
