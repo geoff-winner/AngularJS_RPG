@@ -11,7 +11,7 @@
         </div>
         <div ng-hide='bahamut.health < 1'>
           <h3>Bahamut Health:</h3>
-          <center><progress max="50" value="{{bahamut.health}}"></progress></center>
+          <center><progress max="100" value="{{bahamut.health}}"></progress></center>
         </div>
         <div ng-show='bahamut.health < 1'>
           <h3>You killed Bahamut!</h3>
@@ -39,7 +39,7 @@
         </div>
         <div ng-hide='bahamut.health < 1'>
           <h3>Bahamut Health:</h3>
-          <center><progress max="50" value="{{bahamut.health}}"></progress></center>
+          <center><progress max="100" value="{{bahamut.health}}"></progress></center>
         </div>
         <div ng-show='bahamut.health < 1'>
           <h3>You killed Bahamut!</h3>
@@ -60,7 +60,7 @@
       <ul ng-repeat="item in rogue">
         <div ng-hide='item.health < 1'>
         <h3> Your Health:</h3>
-        <center><progress max="50" value="{{item.health}}"></progress></center>
+        <center><progress max="100" value="{{item.health}}"></progress></center>
         </div>
         <div ng-show='item.health < 1'>
           <h3> You Died! </h3>

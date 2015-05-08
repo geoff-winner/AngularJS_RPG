@@ -37,12 +37,12 @@ characterList.controller('BattleCtrl', function BattleCtrl($scope, CharacterFact
 
   $scope.healthpotion = function() {
     if ($scope.selectedCharacter == 'warrior'){
-      CharacterFactory.warrior[0].health = 50;
+      CharacterFactory.warrior[0].health = 100;
       console.log(CharacterFactory.warrior[0].health);
     } else if ($scope.selectedCharacter == 'mage') {
-      CharacterFactory.mage[0].health = 50;
+      CharacterFactory.mage[0].health = 100;
     } else {
-      CharacterFactory.rogue[0].health = 50;
+      CharacterFactory.rogue[0].health = 100;
     }
   }
 });
